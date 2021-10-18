@@ -1,0 +1,24 @@
+{
+  "name": "salesforcepackagexmlmerger",
+  "version": "1.0.0",
+  "description": "Merge two Xml files to one consolidated xml",
+  "main": "index.js",
+  "scripts": {
+    "start": "bundle.js",
+    "test": "test.js"
+  },
+  "keywords": [
+    "xml",
+    "Salesforce",
+    "package",
+    "merge"
+  ],
+  "author": "Akinsola Jegede",
+  "license": "ISC",
+  "dependencies": {
+    "xml-js": "^1.6.11"
+  },
+  "engines": {
+    "node": "14.18.0"
+  }
+}
