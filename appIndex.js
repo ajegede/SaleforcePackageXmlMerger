@@ -34,7 +34,7 @@ class PackageTypes{
                 curItem[0].members = [...new Set(curItem[0].members)]
                 curItem[0].members.sort();
             }else{
-                ata.sort();
+                if(Array.isArray(ata)) ata.sort();
                 this.types.push(ata);
             }
            
