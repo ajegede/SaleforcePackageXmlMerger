@@ -33,7 +33,9 @@ class PackageTypes{
             if(curItem.length){
                 curItem[0].members.push(...ata.members)
                 curItem[0].members = [...new Set(curItem[0].members)]
+                curItem[0].members.sort()
             }else{
+                ata.sort()
                 this.types.push(ata);
             }
            
@@ -65,6 +67,7 @@ window.mergePackage = function(){
     let additional = new PackageTypes(json2Raw.Package.types).formatTypes();  
     
     let newTypes = initialPkg.mergeTypes(additional).fixFormat();
+    console.log(newTypes);
     jsonRaw.Package.types = [...newTypes.types];
 
     if(returnTypesOnly){
