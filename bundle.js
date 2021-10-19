@@ -11,7 +11,7 @@ const convert = require('xml-js');
  */
 class PackageTypes{
     constructor(types){
-        this.types=types;
+        this.types=(!Array.isArray(types))?new Array(types): types;
     }
     formatTypes(){
         this.types.forEach(at=>{
