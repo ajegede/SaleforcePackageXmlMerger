@@ -66,7 +66,6 @@ window.mergePackage = function(){
     let additional = new PackageTypes(json2Raw.Package.types).formatTypes();  
     
     let newTypes = initialPkg.mergeTypes(additional).fixFormat();
-    console.log(newTypes);
     jsonRaw.Package.types = [...newTypes.types];
 
     if(returnTypesOnly){
