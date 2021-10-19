@@ -78,7 +78,7 @@ window.mergePackage = function(){
     
     window.document.getElementById('newPackage').value=jsonRawXML;
   } catch (error) {
-    window.document.getElementById('newPackage').value='Error occoured. Pass appropriate values as xml Package. Check console for error details';
+    window.document.getElementById('newPackage').value='Error occurred. Pass appropriate values as XML Package. Check the console for error details';
     console.log(error.message);
     console.log(error.stack);
   }
