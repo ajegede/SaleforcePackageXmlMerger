@@ -49,6 +49,7 @@ class PackageTypes{
                e.members[i]={_text:m}
             })
         })
+        this.types.sort((a,b) => (a.name._text > b.name._text) ? 1 : ((b.name._text > a.name._text) ? -1 : 0))
         return this;
     }
 }
