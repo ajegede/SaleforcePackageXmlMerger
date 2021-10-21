@@ -88,7 +88,8 @@ window.mergePackage = function(){
 window.copyFormatted = function() {
   var copyText = document.getElementById("newPackage");
   copyText.select();
-  navigator.clipboard.writeText(copyText.value);
+  // navigator.clipboard.writeText(copyText.value);
+  document.execCommand('copy');
 }
 
 module.exports={
