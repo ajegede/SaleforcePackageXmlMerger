@@ -78,6 +78,9 @@ window.mergePackage = function(){
     
     window.document.getElementById('newPackage').value=jsonRawXML;
   } catch (error) {
+    
+    alert('Another GIGA case. Here is the raw error message. Don\'t blame me.  ===> '+error)
+    
     window.document.getElementById('newPackage').value='Error occurred. Pass appropriate values as XML Package. Check the console for error details';
     console.log(error.message);
     console.log(error.stack);
